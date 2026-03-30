@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search bar — collapses into icon when not active -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <!-- Sort submenu -->
+    <item
+        android:id="@+id/sort_by_name"
+        android:title="Sort by Name"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_by_secondary"
+        android:title="Sort by League / Position"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort_reset"
+        android:title="Reset / Show All"
+        app:showAsAction="never" />
+
+</menu>
