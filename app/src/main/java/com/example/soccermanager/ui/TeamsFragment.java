@@ -61,7 +61,6 @@ public class TeamsFragment extends Fragment {
     }
 
     public void loadTeams(List<Team> teams) {
-        // Use TeamIterator to build the list before handing it to the adapter
         java.util.List<Team> ordered = new java.util.ArrayList<>();
         TeamIterator it = new TeamIterator(teams);
         while (it.hasNext()) ordered.add(it.next());
