@@ -24,7 +24,6 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.ViewHolder
         notifyDataSetChanged();
     }
 
-    // Abbreviate position to 2-3 chars for the badge circle
     private String positionAbbr(String pos) {
         switch (pos) {
             case "Forward":    return "FW";
